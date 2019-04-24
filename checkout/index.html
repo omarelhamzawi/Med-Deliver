@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Home</title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="container">
+		
+			<section id="search">
+			
+				<div class="medlogo">
+					<img class="img-fluid" src="img/medlogo.png" alt="logo">
+				</div>
+				
+				<input type="text" id="search-query" placeholder="Search e.g. Canterbury"> 
+				<button type="submit" id="search-btn">Search</button>
+			</section>
+			
+			<section id="data">
+				<table class="table">
+						<thead>
+							<tr>
+								<td>Pharmacies</td>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+			</section>
+		
+		</div>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/app.js"></script>
+		<script>
+		$(document).ready(function() {
+			$("#search-btn").click(function() {
+				var query = $("#search-query").val();
+				if (query.length > 0) {
+					$().searchForPharmacy(query);
+				} else {
+					alert("No search query supplied.");
+				}
+			});
+		});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Basket</title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<section id="data">
+			<div class="medlogo">
+					<img class="img-fluid" src="img/medlogo.png" alt="logo">
+			</div>
+			<div class="container">
+			<a href="product.html">Back</a><br><br>
+			
+			<table>
+					<thead>
+						<tr>
+							<td class="headingg">Your Cart</td>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+				
+				Total Price: <strong id="totalPrice"></strong> <br><br>
+				
+				<button id="empty-cart">Empty Cart</button>
+				<div id="checkout-button"></div>
+				</div>
+		</section>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/app.js"></script>
+		<script>
+		$(document).ready(function() {			
+			$("#empty-cart").click(function() {								
+				$().clearCart();
+				$().clearTable();
+			});
+			$().showCart();
+		});
+		</script>		
+	</body>
+</html>

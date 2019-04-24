@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Pharmacy</title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<section id="data">
+			<div class="medlogo">
+					<img class="img-fluid" src="img/medlogo.png" alt="logo">
+			</div>
+			<div class="container">
+			<a href="index.html">Back to Search</a><br><br>
+			
+			<table>
+					<thead>
+						<tr>
+							<td class="headingg">Products<hr></td>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+						<a class="button1" href="basket.html">View Basket</a>
+
+		</section>
+
+		</div>
+		
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/app.js"></script>
+		<script>
+		$(document).ready(function() {
+			$().getProducts($().urlParam("id"));
+		});
+		</script>
+	</body>
+</html>

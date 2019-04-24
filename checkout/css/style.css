@@ -1,0 +1,50 @@
+#search {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+td{
+	padding: 2px;
+}
+
+body  {
+
+	background-color:#F0F1F5;
+	font-size: 13px;
+}
+
+.medlogo {
+	margin-bottom: 10px;
+}
+
+.headingg{
+	color: #e61c5d;
+	font-weight: bold;
+}
+
+button, .button1{
+	color: white;
+	background-color: #CB195B;
+
+}
+
+.button1{
+	padding: 5px;
+}
+.button1:hover{
+	text-decoration: none;
+	color: white;
+	
+}
+
+
+
+
+
