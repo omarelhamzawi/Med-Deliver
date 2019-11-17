@@ -13,18 +13,13 @@ class IndexViewController: UIViewController {
         print ("Sign in button tapped")
     }
     
-    
-    
     @IBAction func RegisterButtonTapped(_ sender: Any) {
         print ("Register Button Tapped")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
         // Do any additional setup after loading the view.
-        
     }
     
 
@@ -37,5 +32,6 @@ class IndexViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
 
 }

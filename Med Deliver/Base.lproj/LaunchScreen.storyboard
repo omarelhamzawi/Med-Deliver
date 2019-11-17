@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,67 +12,110 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plusLogo" translatesAutoresizingMaskIntoConstraints="NO" id="gbh-Ls-U3H">
-                                <rect key="frame" x="67" y="212" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvR-LT-q3n">
-                                <rect key="frame" x="105" y="608" width="176" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="© 2019. All rights reserved.">
-                                        <attributes>
-                                            <font key="NSFont" size="14" name=".SFNSText"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDl-bh-QJL">
-                                <rect key="frame" x="67" y="348" width="253" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Pharmacy at your ">
-                                        <attributes>
-                                            <font key="NSFont" size="20" name="TrebuchetMS-Italic"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="fingertips">
-                                        <attributes>
-                                            <color key="NSColor" red="0.79671937227249146" green="0.20232704281806946" blue="0.39215639233589172" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" size="20" name="TrebuchetMS-Italic"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Tkb-df-YLr">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="aju-Xs-fOA" userLabel="Top View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="272.66666666666669"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Med Deliver Logo" translatesAutoresizingMaskIntoConstraints="NO" id="553-Rs-XA8">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="272.66666666666669"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="553-Rs-XA8" secondAttribute="trailing" id="0Qm-ra-3Xl"/>
+                                            <constraint firstItem="553-Rs-XA8" firstAttribute="leading" secondItem="aju-Xs-fOA" secondAttribute="leading" id="MOE-m6-Bzt"/>
+                                            <constraint firstItem="553-Rs-XA8" firstAttribute="centerX" secondItem="aju-Xs-fOA" secondAttribute="centerX" id="UCq-p6-fUW"/>
+                                            <constraint firstItem="553-Rs-XA8" firstAttribute="top" secondItem="aju-Xs-fOA" secondAttribute="top" id="i6n-EA-CDP"/>
+                                            <constraint firstItem="553-Rs-XA8" firstAttribute="centerY" secondItem="aju-Xs-fOA" secondAttribute="centerY" id="jgN-y8-u1v"/>
+                                            <constraint firstAttribute="bottom" secondItem="553-Rs-XA8" secondAttribute="bottom" id="qMR-DA-T4Y"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="xx0-Wc-VR8" userLabel="Middle View">
+                                        <rect key="frame" x="19.666666666666657" y="272.66666666666663" width="375" height="272.66666666666663"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IOL-s5-RbF">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="272.66666666666669"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="plusLogo" translatesAutoresizingMaskIntoConstraints="NO" id="R8G-f5-1cO">
+                                                        <rect key="frame" x="16.666666666666657" y="0.0" width="341.33333333333337" height="132.33333333333334"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDl-bh-QJL">
+                                                        <rect key="frame" x="61.333333333333329" y="140.33333333333331" width="252.33333333333337" height="132.33333333333331"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Pharmacy at your ">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="20" name="TrebuchetMS-Italic"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                        <tabStops/>
+                                                                    </paragraphStyle>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content="fingertips">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.79671937227249146" green="0.20232704281806946" blue="0.39215639233589172" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <font key="NSFont" size="20" name="TrebuchetMS-Italic"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                        <tabStops/>
+                                                                    </paragraphStyle>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="IOL-s5-RbF" secondAttribute="bottom" id="DAU-lT-Xbz"/>
+                                            <constraint firstItem="IOL-s5-RbF" firstAttribute="top" secondItem="xx0-Wc-VR8" secondAttribute="top" id="Rz4-4F-yVS"/>
+                                            <constraint firstAttribute="trailing" secondItem="IOL-s5-RbF" secondAttribute="trailing" id="o9W-R6-jB0"/>
+                                            <constraint firstItem="IOL-s5-RbF" firstAttribute="leading" secondItem="xx0-Wc-VR8" secondAttribute="leading" id="y1g-8x-w49"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ki-HK-IGa" userLabel="Bottom View">
+                                        <rect key="frame" x="19.666666666666657" y="545.33333333333337" width="375" height="272.66666666666663"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvR-LT-q3n">
+                                                <rect key="frame" x="84.333333333333329" y="125.66666666666661" width="206.33333333333337" height="21.333333333333329"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="© 2019. All rights reserved.">
+                                                        <attributes>
+                                                            <font key="NSFont" size="18" name="HelveticaNeue-Thin"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="cvR-LT-q3n" firstAttribute="centerX" secondItem="8ki-HK-IGa" secondAttribute="centerX" id="L95-pu-MRC"/>
+                                            <constraint firstItem="cvR-LT-q3n" firstAttribute="centerY" secondItem="8ki-HK-IGa" secondAttribute="centerY" id="whw-SI-F91"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.93333333333333335" green="0.94901960784313721" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Tkb-df-YLr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="72G-Pw-6yG"/>
+                            <constraint firstItem="Tkb-df-YLr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="K2G-qg-SxW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Tkb-df-YLr" secondAttribute="bottom" id="oJs-da-AYs"/>
+                            <constraint firstItem="Tkb-df-YLr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wag-bR-xD3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Med Deliver Logo" id="qan-xf-nQu">
-                    <rect key="frame" x="0.0" y="0.0" width="355" height="97"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.93333333330000001" green="0.94901960780000005" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
-                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                </imageView>
             </objects>
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Med Deliver Logo" width="924" height="247"/>
-        <image name="plusLogo" width="1024" height="1024"/>
+        <image name="Med Deliver Logo" width="616" height="164.66667175292969"/>
+        <image name="plusLogo" width="341.33334350585938" height="341.33334350585938"/>
     </resources>
 </document>

@@ -34,9 +34,9 @@ class ViewController: UIViewController, UISearchBarDelegate, CLLocationManagerDe
         
         let location = locations[0]
             
-        let span:MKCoordinateSpan = MKCoordinateSpanMake(0.02, 0.02)
+        let span:MKCoordinateSpan = MKCoordinateSpan.init(latitudeDelta: 0.02, longitudeDelta: 0.02)
         let myLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
-        let _:MKCoordinateRegion = MKCoordinateRegionMake(myLocation, span)
+        let _:MKCoordinateRegion = MKCoordinateRegion.init(center: myLocation, span: span)
             
 //        myMapView.setRegion(region, animated: true)
         
@@ -59,7 +59,7 @@ class ViewController: UIViewController, UISearchBarDelegate, CLLocationManagerDe
         
         //Activity Indicator
         let activityIndicator = UIActivityIndicatorView()
-        activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+        activityIndicator.style = UIActivityIndicatorView.Style.gray
         activityIndicator.center = self.view.center
         activityIndicator.hidesWhenStopped = true
         activityIndicator.startAnimating()
@@ -71,7 +71,7 @@ class ViewController: UIViewController, UISearchBarDelegate, CLLocationManagerDe
         dismiss(animated: true, completion: nil)
         
         //Create the search request
-        let searchRequest = MKLocalSearchRequest()
+        let searchRequest = MKLocalSearch.Request()
         searchRequest.naturalLanguageQuery = searchBar.text
         
         let activeSearch = MKLocalSearch(request: searchRequest)
@@ -100,8 +100,8 @@ class ViewController: UIViewController, UISearchBarDelegate, CLLocationManagerDe
                 
                 //Zooming in on annotation
                 let coordinate:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude!, longitude!)
-                let span = MKCoordinateSpanMake(0.1, 0.1)
-                let region = MKCoordinateRegionMake(coordinate, span)
+                let span = MKCoordinateSpan.init(latitudeDelta: 0.1, longitudeDelta: 0.1)
+                let region = MKCoordinateRegion.init(center: coordinate, span: span)
                 self.myMapView.setRegion(region, animated: true)
             }
             

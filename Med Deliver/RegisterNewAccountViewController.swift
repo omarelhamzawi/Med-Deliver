@@ -58,7 +58,7 @@ class RegisterNewAccountViewController: UIViewController {
             
         }
         //Create Activity Indicator
-        let myActivityIndicator = UIActivityIndicatorView(activityIndicatorStyle:         UIActivityIndicatorViewStyle.gray)
+        let myActivityIndicator = UIActivityIndicatorView(style:         UIActivityIndicatorView.Style.gray)
         
         // Position Activity Indicator in the center of the main view
         myActivityIndicator.center = view.center

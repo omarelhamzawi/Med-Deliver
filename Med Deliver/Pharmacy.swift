@@ -7,28 +7,31 @@
 //
 
 import UIKit
-class Pharmacy: UIViewController{
+import WebKit
+class Pharmacy: UIViewController, WKNavigationDelegate {
+var webView: WKWebView!
     
     //link the web view to this swift file.
     
-    @IBOutlet weak var myWebView: UIWebView!
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    
+    override func loadView() {
+        webView = WKWebView()
+        webView.navigationDelegate = self
+        view = webView
+    }
         // Do any additional setup after loading the view.
         
         
-        // PREREQUISTE: make sure to update the URL to the correct file directory !
-        
-        
-        //REMEMBER TO CHANGE THE URL ! ! !
-        
-        let url = URL(string: "file:///Users/supathshrestha/Desktop/MED%20DELIVER/Med%20Deliver/MED%20DELIVER%20APP/checkout/index.html")
-        myWebView.loadRequest(URLRequest(url: url!))
-    }
+    
+    
   
     
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    override func viewDidLoad() {
+           super.viewDidLoad()
+
+            let url = URL(string: "https://google.com")!
+            webView.load(URLRequest(url:url))
+            webView.allowsBackForwardNavigationGestures = true
     }
 }
